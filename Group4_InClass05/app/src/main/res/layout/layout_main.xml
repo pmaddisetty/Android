@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/searchtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchbtn"
+        android:layout_alignBottom="@+id/searchbtn"
+        android:layout_toEndOf="@+id/prev"
+        android:layout_toRightOf="@+id/prev"
+        android:text="@string/searchtext"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/searchbtn" />
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/square" />
+
+    <ImageView
+        android:id="@+id/prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/mainimg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/mainimg"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/searchbtn"
+        android:layout_alignRight="@+id/searchbtn"
+        android:layout_alignTop="@+id/prev"
+        app:srcCompat="@drawable/next" />
+
+</RelativeLayout>

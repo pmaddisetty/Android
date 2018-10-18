@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "199618521510",
+    "firebase_url": "https://navyamanam-9b234.firebaseio.com",
+    "project_id": "navyamanam-9b234",
+    "storage_bucket": "navyamanam-9b234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199618521510:android:4fb18a25098b9663",
+        "android_client_info": {
+          "package_name": "inclass02.poorna.com.myapplist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199618521510-8lja9a2984afff3cepij7p9rk8odbnfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlefB8i2VYzu5BXw-K3G4EidXnXDrzc-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

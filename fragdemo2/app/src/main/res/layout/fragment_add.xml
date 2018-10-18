@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inclass02.poorna.com.fragdemo2.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nametxt"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/edname"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/desctxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/eddesc"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/genretxt"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Genre" />
+
+            <Spinner
+                android:id="@+id/addspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Select"
+                android:padding="10dp">
+
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ratingtxt"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Rating" />
+
+            <SeekBar
+                android:id="@+id/addseek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yeartxt"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Year" />
+
+            <EditText
+                android:id="@+id/edyear"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/imdbtxt"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="IMDB" />
+
+            <EditText
+                android:id="@+id/edimdb"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_moviebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Add Movie" />
+    </LinearLayout>
+</FrameLayout>

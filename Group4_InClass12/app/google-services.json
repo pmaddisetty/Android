@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "672621117049",
+    "firebase_url": "https://inclass12-bad7d.firebaseio.com",
+    "project_id": "inclass12-bad7d",
+    "storage_bucket": "inclass12-bad7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672621117049:android:7d43367667fe6e01",
+        "android_client_info": {
+          "package_name": "inclass02.poorna.com.group4_inclass12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672621117049-es1469mouesjeu4n0faijkr7t0st1dkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inclass02.poorna.com.group4_inclass12",
+            "certificate_hash": "ab3ce401b211bc808b3ff6c4174dd4601b996acc"
+          }
+        },
+        {
+          "client_id": "672621117049-9pmm83l5nb9m14mha30f4tl1kd58ahv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbMz5D6HinBSBuvMN2R6gwkXDXT6P4_LA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672621117049-9pmm83l5nb9m14mha30f4tl1kd58ahv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

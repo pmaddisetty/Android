@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="21dp"
+        android:text="Student Infornation" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="22dp"
+        android:text="Name :" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/info"
+        android:layout_alignStart="@+id/info"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="21dp"
+        android:text="Email :" />
+
+    <TextView
+        android:id="@+id/email_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text"
+        android:layout_alignStart="@+id/name_text"
+        android:layout_alignTop="@+id/email" />
+
+    <TextView
+        android:id="@+id/proglang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_account"
+        android:layout_alignStart="@+id/text_account"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="39dp"
+        android:text="Prog. Language :" />
+
+    <TextView
+        android:id="@+id/proglang_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/proglang"
+        android:layout_alignBottom="@+id/proglang"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/email_enter"
+        android:layout_toRightOf="@+id/email_enter" />
+
+    <TextView
+        android:id="@+id/text_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proglang"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/name_text"
+        android:layout_toStartOf="@+id/name_text"
+        android:text="Account State :" />
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_account"
+        android:layout_alignLeft="@+id/proglang_text"
+        android:layout_alignStart="@+id/proglang_text" />
+
+    <TextView
+        android:id="@+id/mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_account"
+        android:layout_alignStart="@+id/text_account"
+        android:layout_centerVertical="true"
+        android:text="Mood :" />
+
+    <TextView
+        android:id="@+id/text_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mood"
+        android:layout_toLeftOf="@+id/account_text"
+        android:layout_toStartOf="@+id/account_text" />
+
+    <ImageView
+        android:id="@+id/name_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/email_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/email_enter"
+        android:layout_alignLeft="@+id/name_edit"
+        android:layout_alignStart="@+id/name_edit"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/proglang_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/proglang_text"
+        android:layout_alignEnd="@+id/email_edit"
+        android:layout_alignRight="@+id/email_edit"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/account_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/account_text"
+        android:layout_alignEnd="@+id/proglang_edit"
+        android:layout_alignRight="@+id/proglang_edit"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/mood_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/text_mood"
+        android:layout_alignEnd="@+id/account_edit"
+        android:layout_alignRight="@+id/account_edit"
+        app:srcCompat="@drawable/edit" />
+</RelativeLayout>

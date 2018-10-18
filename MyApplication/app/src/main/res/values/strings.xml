@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hellotxt">Hello</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">cancel</string>
+    <string name="other_button">Other</string>
+    <string-array name="colors_array">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>

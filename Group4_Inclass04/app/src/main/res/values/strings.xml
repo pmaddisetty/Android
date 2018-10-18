@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Group4_Inclass04</string>
+    <string name="pwdcount">Select Passwords count :</string>
+    <string name="pwdlength">Select Passwords length :</string>
+    <string name="pwddisplay">Password:</string>
+    <string name="finaltxt" />
+    <string name="launcher">Generate Passwords</string>
+    <string name="thr">Generate Passwords (Thread)</string>
+</resources>

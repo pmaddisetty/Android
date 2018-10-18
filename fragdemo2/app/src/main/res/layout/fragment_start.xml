@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inclass02.poorna.com.fragdemo2.StartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/lin_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add movie" />
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/dlt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Movie" />
+
+        <Button
+            android:id="@+id/shwyear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show List by Year" />
+
+        <Button
+            android:id="@+id/shwrat_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show List By Rating" />
+    </LinearLayout>
+</FrameLayout>

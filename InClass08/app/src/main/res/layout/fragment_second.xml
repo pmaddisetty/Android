@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="inclass02.poorna.com.inclass08.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/student_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/student_information"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/name_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/email_dis"
+            android:layout_below="@+id/student_information"
+            android:layout_marginTop="32dp"
+            android:text="@string/name_dis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/email_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/mood_dis"
+            android:layout_below="@+id/name_dis"
+            android:layout_marginTop="35dp"
+            android:text="@string/email_dis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/department_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email_dis"
+            android:layout_marginTop="42dp"
+            android:text="@string/department_dis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mood_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/department_dis"
+            android:layout_alignStart="@+id/department_dis"
+            android:layout_below="@+id/department_dis"
+            android:layout_marginTop="38dp"
+            android:text="@string/mood_dis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name_dis"
+            android:layout_alignBottom="@+id/name_dis"
+            android:layout_toEndOf="@+id/edit_dept"
+            android:text="bbbb"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edit_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/department_dis"
+            android:layout_alignStart="@+id/edit_dept"
+            android:text="hnn"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edit_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/department_dis"
+            android:layout_alignBottom="@+id/department_dis"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/department_dis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edit_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mood_dis"
+            android:layout_alignLeft="@+id/edit_dept"
+            android:layout_alignStart="@+id/edit_dept"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/name_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/edit_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/email_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/edit_email"
+            android:layout_alignLeft="@+id/name_img"
+            android:layout_alignStart="@+id/name_img"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/dept_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/edit_dept"
+            android:layout_alignEnd="@+id/email_img"
+            android:layout_alignRight="@+id/email_img"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/mood_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/dept_img"
+            android:layout_alignStart="@+id/dept_img"
+            android:layout_alignTop="@+id/edit_mood"
+            app:srcCompat="@drawable/edit" />
+    </RelativeLayout>
+</FrameLayout>

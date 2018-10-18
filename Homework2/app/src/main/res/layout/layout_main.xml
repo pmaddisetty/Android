@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_toStartOf="@+id/last"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:srcCompat="@drawable/adding" />
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:text="@string/task_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_title"
+        android:layout_marginTop="26dp"
+        android:layout_toStartOf="@+id/task_title"
+        android:text="@string/task_date" />
+
+    <TextView
+        android:id="@+id/task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/task_date"
+        android:layout_alignBottom="@+id/task_date"
+        android:layout_toEndOf="@+id/task_title"
+        android:text="@string/task_time" />
+
+    <TextView
+        android:id="@+id/task_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/task_priority" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="@string/task"
+        android:textStyle="bold"
+        android:textSize="19dp" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="31dp"
+        android:layout_toStartOf="@+id/remove"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/task"
+        android:layout_alignTop="@+id/edit"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/edit"
+        android:layout_marginEnd="18dp"
+        android:layout_toStartOf="@+id/edit"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/add"
+        android:layout_alignTop="@+id/remove"
+        android:layout_toEndOf="@+id/remove"
+        android:layout_marginEnd="13dp"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/last"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/next"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/last" />
+
+</RelativeLayout>

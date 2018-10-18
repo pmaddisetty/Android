@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/questn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/questnimg"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/question"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/qno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timetxt"
+        android:layout_alignBottom="@+id/timetxt"
+        android:layout_alignLeft="@+id/questn"
+        android:layout_alignStart="@+id/questn"
+        android:text="@string/qno"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/secondquit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:text="@string/secondQuit" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="@string/next" />
+
+    <ImageView
+        android:id="@+id/questnimg"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qno"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/noimg" />
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/questn"
+        android:layout_alignRight="@+id/questn"
+        android:layout_below="@+id/questn"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/qno"
+        android:layout_toRightOf="@+id/qno" />
+
+    <TextView
+        android:id="@+id/timetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/next"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/next"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

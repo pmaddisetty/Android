@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ThreadDemo2</string>
+    <string name="go">Go</string>
+    <string name="searchtext">Search text</string>
+</resources>

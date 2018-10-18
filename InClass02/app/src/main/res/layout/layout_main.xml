@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/age" />
+
+    <EditText
+        android:id="@+id/age_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/age"
+        android:layout_toRightOf="@+id/age"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weight_val"
+        android:layout_alignBottom="@+id/weight_val"
+        android:layout_toLeftOf="@+id/age_val"
+        android:layout_toStartOf="@+id/age_val"
+        android:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/weight_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age_val"
+        android:layout_alignStart="@+id/age_val"
+        android:layout_below="@+id/age_val"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_below="@+id/weight_val"
+        android:layout_marginTop="47dp"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/height_feet"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight_val"
+        android:layout_alignStart="@+id/weight_val"
+        android:layout_alignTop="@+id/height"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/height_inches"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/height_feet"
+        android:layout_alignBottom="@+id/height_feet"
+        android:layout_alignEnd="@+id/weight_val"
+        android:layout_alignRight="@+id/weight_val"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/height_feet"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/bmi_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/height_feet"
+        android:layout_alignStart="@+id/height_feet"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bmi_val"
+        android:layout_alignEnd="@+id/height_inches"
+        android:layout_alignRight="@+id/height_inches"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        tools:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/weight"
+        android:layout_toRightOf="@+id/weight" />
+</RelativeLayout>

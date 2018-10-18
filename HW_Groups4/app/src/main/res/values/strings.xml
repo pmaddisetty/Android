@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Home Work 4</string>
+    <string name="billtotal">Bill Total</string>
+    <string name="entervalue"></string>
+    <string name="tippercent">Tip %</string>
+    <string name="tenpercent">10%</string>
+    <string name="twentypercent">20%</string>
+    <string name="eighteenpercent">18%</string>
+    <string name="fifteenpercent">15%</string>
+    <string name="cs">25%</string>
+    <string name="custom">Custom</string>
+    <string name="customseek">Custom</string>
+    <string name="tip">Tip</string>
+    <string name="tipvalue">0.00</string>
+    <string name="total1">Total</string>
+    <string name="tipValue">0.00</string>
+    <string name="totalValue">0.00</string>
+    <string name="exitButton">Exit</string>
+    <string name="custompercent">25%</string>
+</resources>

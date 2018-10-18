@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <SeekBar
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdcount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/pwdcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwdlength"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pwdlength"
+        android:layout_marginTop="40dp"
+        android:text="@string/pwdcount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pwdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pwdcount"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/pwdcount"
+        android:layout_toRightOf="@+id/pwdcount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pwdlength"
+        android:layout_marginTop="22dp"
+        android:max="23" />
+
+    <TextView
+        android:id="@+id/pwdlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/pwdlength"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/lengthtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwdlength"
+        android:layout_alignBottom="@+id/pwdlength"
+        android:layout_alignLeft="@+id/pwdtext"
+        android:layout_alignStart="@+id/pwdtext"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/thr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/async"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/thr" />
+
+    <Button
+        android:id="@+id/async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:text="Generate  Passwords(Async Task)" />
+
+    <TextView
+        android:id="@+id/pwddisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwdlength"
+        android:layout_alignStart="@+id/pwdlength"
+        android:layout_below="@+id/s2"
+        android:layout_marginTop="33dp"
+        android:text="@string/pwddisplay"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/finaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwddisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/finaltxt"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Group4_InClass10</string>
+    <string name="log1_btn">Login</string>
+    <string name="sign1_btn">Sign Up</string>
+    <string name="sign2_btn">Sign Up</string>
+    <string name="pref">pref</string>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/bmiHeader"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="-114dp"
+        android:text="@string/editBMIHeader"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="356dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:backgroundTint="@android:color/holo_blue_light"
+        />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="117dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/bmiHeader"
+        android:layout_marginTop="144dp"
+        android:text="@string/textViewWeight"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/bmiHeader"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/textViewLb"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editTextWeight"
+        android:layout_marginEnd="72dp"
+        android:gravity="bottom"
+        android:text="@string/textViewLb"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewHieght"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/bmiHeader"
+        android:layout_marginTop="248dp"
+        android:text="@string/textViewHeight"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextFeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextInches"
+        android:layout_alignStart="@+id/bmiHeader"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/textViewFeet"
+        android:layout_width="71dp"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/textViewLb"
+        android:layout_alignTop="@+id/editTextFeet"
+        android:gravity="bottom"
+        android:text="@string/textViewFeet"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bmiHeader"
+        android:layout_marginBottom="186dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/textViewInches"
+        android:layout_width="71dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/textViewLb"
+        android:layout_alignTop="@+id/editTextInches"
+        android:gravity="bottom"
+        android:text="@string/textViewInches"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonCalculateBMI"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="123dp"
+        android:layout_marginStart="92dp"
+        android:text="@string/btnCal" />
+
+    <TextView
+        android:id="@+id/textViewYourBMI"
+        android:layout_width="229dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="62dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewYourBMI"
+        android:layout_marginBottom="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

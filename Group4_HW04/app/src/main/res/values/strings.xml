@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Group4_HW04</string>
+    <string name="showcateg">Show Categories</string>
+    <string name="btngo">Go</string>
+    <string name="ntitle">title</string>
+    <string name="ndate">date</string>
+    <string name="ndesc">Description</string>
+    <string name="nindex">index</string>
+</resources>

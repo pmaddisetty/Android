@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Group4_HW03</string>
+    <string name="welcomemsg">Welcome to Trivia App</string>
+    <string name="strtbtn">Start Trivia</string>
+    <string name="exit">Exit</string>
+    <string name="qno">Q</string>
+    <string name="question">question</string>
+    <string name="secondQuit">Quit</string>
+    <string name="next">Next</string>
+    <string name="statsHead">Trivia Stats</string>
+    <string name="crctAns">Correct Answers</string>
+    <string name="correctPercentage" />
+    <string name="comment">Try again and see if you can get all the correct answers!</string>
+    <string name="statQuit">Quit</string>
+    <string name="tryAgain">Try Again</string>
+</resources>

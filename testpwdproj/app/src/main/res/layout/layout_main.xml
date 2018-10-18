@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdcount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/pwdcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/s1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/s1"
+        android:layout_marginTop="43dp"
+        android:text="Select Passwords count"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pwdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pwdcount"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/pwdcount"
+        android:layout_toRightOf="@+id/pwdcount" />
+
+    <SeekBar
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:max="23" />
+
+    <TextView
+        android:id="@+id/pwdlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/s2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Select pwd length" />
+
+    <TextView
+        android:id="@+id/lengthtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwdlength"
+        android:layout_alignBottom="@+id/pwdlength"
+        android:layout_toEndOf="@+id/pwdcount"
+        android:layout_toRightOf="@+id/pwdcount" />
+
+    <Button
+        android:id="@+id/thr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s2"
+        android:layout_marginTop="41dp"
+        android:text=" Generate Passwords (Thread)" />
+
+    <Button
+        android:id="@+id/async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Generate  Passwords(Async Task)" />
+
+    <TextView
+        android:id="@+id/finaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s2"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/pwdlength"
+        android:layout_toRightOf="@+id/pwdlength"
+        android:text="TextView" />
+
+</RelativeLayout>

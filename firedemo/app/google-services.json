@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "716056786422",
+    "firebase_url": "https://firedemo-3787c.firebaseio.com",
+    "project_id": "firedemo-3787c",
+    "storage_bucket": "firedemo-3787c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716056786422:android:37a402ac3c100c5d",
+        "android_client_info": {
+          "package_name": "inclass02.poorna.com.firedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716056786422-l2p6ob14hfofd7avjlvpnuh9ikk78hvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inclass02.poorna.com.firedemo",
+            "certificate_hash": "ab3ce401b211bc808b3ff6c4174dd4601b996acc"
+          }
+        },
+        {
+          "client_id": "716056786422-8i71dbnjv70ftcj0o81j5mg4hj14k0h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB_O1_UpDSNivyi__rY2VLRle5EKN0ah8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716056786422-8i71dbnjv70ftcj0o81j5mg4hj14k0h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

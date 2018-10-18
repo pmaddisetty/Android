@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "870173893836",
+    "firebase_url": "https://inclass13-79636.firebaseio.com",
+    "project_id": "inclass13-79636",
+    "storage_bucket": "inclass13-79636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870173893836:android:c93f396ff1df90f8",
+        "android_client_info": {
+          "package_name": "inclass02.poorna.com.group4_inclass13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870173893836-75ij8cs34f557viv0u3sr8asmk1l1hkq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inclass02.poorna.com.group4_inclass13",
+            "certificate_hash": "ab3ce401b211bc808b3ff6c4174dd4601b996acc"
+          }
+        },
+        {
+          "client_id": "870173893836-tglgpika0bq0mnk4f20ib8colh6k6en9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHBtJBZMnS88hXsJBOJC9Rbs2_peqWDfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870173893836-tglgpika0bq0mnk4f20ib8colh6k6en9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

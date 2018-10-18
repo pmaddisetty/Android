@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inclass02.poorna.com.group4_hw03.ThirdActivity">
+
+    <TextView
+        android:id="@+id/statsHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:text="@string/statsHead" />
+
+    <TextView
+        android:id="@+id/crctAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statsHead"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:text="@string/crctAns" />
+
+    <TextView
+        android:id="@+id/correctPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crctAns"
+        android:layout_alignStart="@+id/crctAns"
+        android:layout_below="@+id/crctAns"
+        android:layout_marginTop="29dp"
+        android:hint="50%"
+        android:text="@string/correctPercentage"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textColorLink="@android:color/holo_green_light" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/correctPercentage"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/correctPercentage"
+        android:layout_toRightOf="@+id/correctPercentage"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/comment"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/comment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/comment"
+        android:textAllCaps="false"
+        android:text="@string/tryAgain" />
+
+    <Button
+        android:id="@+id/statQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comment"
+        android:layout_alignStart="@+id/comment"
+        android:layout_alignTop="@+id/tryAgain"
+        android:textAllCaps="false"
+        android:text="@string/statQuit" />
+</RelativeLayout>

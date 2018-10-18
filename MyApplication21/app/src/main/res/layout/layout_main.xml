@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/length1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/length1" />
+
+    <EditText
+        android:id="@+id/lengthinp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/length1"
+        android:layout_alignBottom="@+id/length1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/length2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/length1"
+        android:layout_alignRight="@+id/length1"
+        android:layout_below="@+id/lengthinp1"
+        android:layout_marginTop="23dp"
+        android:text="Length 2" />
+
+    <EditText
+        android:id="@+id/lengthinp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/length2"
+        android:layout_alignBottom="@+id/length2"
+        android:layout_alignLeft="@+id/lengthinp1"
+        android:layout_alignStart="@+id/lengthinp1"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lengthinp2"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/lengthinp2"
+        android:layout_toStartOf="@+id/lengthinp2"
+        app:srcCompat="@drawable/tri" />
+
+    <ImageView
+        android:id="@+id/sqaure"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/triangle"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/square" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/sqaure"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/sqaure"
+        android:layout_toRightOf="@+id/sqaure"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/selecttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sqaure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/selecttext" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selecttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/calculate" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lengthinp2"
+        android:layout_alignRight="@+id/lengthinp2"
+        android:layout_below="@+id/calculate"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/calculate"
+        android:layout_marginBottom="13dp"
+        android:onClick="clearButtonClicked"
+        android:text="@string/clear" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lengthinp2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

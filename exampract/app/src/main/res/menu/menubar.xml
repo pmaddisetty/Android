@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+       android:id="@+id/sortbyas"
+        android:title="Sort by Ascending"
+        android:onClick="sortfunasec" >
+
+    </item>
+
+    <item
+        android:id="@+id/sortbyds"
+        android:title="Sort by Descending"
+        android:onClick="sortfundesc" >
+    </item>
+
+</menu>
